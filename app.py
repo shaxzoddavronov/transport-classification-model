@@ -11,7 +11,8 @@ import platform
 import plotly.express as px
 
 plt=platform.system()
-if plt=='Linux: pathlib.WindowsPath = pathlib.PosixPath
+if plt=='Linux: 
+    pathlib.WindowsPath = pathlib.PosixPath
 
 st.title('Transport Images Classification Model')
 file=st.file_uploader('Upload image',type=['png','jpeg','gif','svg'])
