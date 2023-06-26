@@ -28,4 +28,4 @@ if file:
     #plotting
     fig=px.bar(x=model.dls.vocab,y=prob*100)
     st.plotly_chart(fig)
-print(fastai.__version__)    
+
