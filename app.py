@@ -27,5 +27,6 @@ if file:
 
     #plotting
     fig=px.bar(x=model.dls.vocab,y=prob*100)
-    st.plotly_chart(fig)
-
+    st.plotly_chart(fig)    
+else:
+    pass
