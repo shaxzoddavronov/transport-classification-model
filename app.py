@@ -20,7 +20,7 @@ if file:
     img=PILImage.create(file)
 
     #model
-    model=load_learner('D:\\DL_model\\transports\\venv\\transport_model.pkl')
+    model=load_learner('transport_model.pkl')
     pred,pred_id,prob=model.predict(img)
     st.success(f"Transport: {pred}")
     st.info(f"Probability: {prob[pred_id]*100:.2f}")
