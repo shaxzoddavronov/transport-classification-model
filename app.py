@@ -14,6 +14,7 @@ plt=platform.system()
 if plt=='Linux': pathlib.WindowsPath = pathlib.PosixPath
 
 st.title('Transport Images Classification Model')
+st.text('Please upload only car bicycle and airplane images!')
 file=st.file_uploader('Upload image',type=['png','jpeg','gif','svg'])
 if file:
     st.image(file)
