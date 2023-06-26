@@ -7,9 +7,11 @@ Created on Sat Jun 24 22:00:44 2023
 import streamlit as st
 from fastai.vision.all import *
 import pathlib
+import platform
 import plotly.express as px
-temp = pathlib.PosixPath
-pathlib.PosixPath = pathlib.WindowsPath
+
+plt=platform.system()
+if plt=='Linux: pathlib.WindowsPath = pathlib.PosixPath
 
 st.title('Transport Images Classification Model')
 file=st.file_uploader('Upload image',type=['png','jpeg','gif','svg'])
